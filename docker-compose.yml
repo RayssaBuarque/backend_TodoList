@@ -1,0 +1,22 @@
+
+# CONFIGURAÇÕES DO DOCKER 
+
+version: '3.9'
+
+services: 
+  database:
+    image: postgres
+    container_name: tutorial
+    restart: always
+    ports: # porta 
+      - 5432:5432
+    environment: # dados do ambiente
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=database
+    volumes:
+      - pgdata:/data/postgres
+
+volumes:
+  pgdata:
+    driver: local
