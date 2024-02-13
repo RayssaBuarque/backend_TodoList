@@ -1,3 +1,5 @@
+// DEFINIÇÃO DE MODELOS DE DADOS PRA ESTRUTURA DO BANCO
+
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -5,7 +7,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// DE ONDE O PRISMA PUXA ESSES DADOS
+// CONEXÃO COM BANCO DE DADOS (fonte)
 datasource db {
   provider = "postgresql"
   url      = "postgresql://admin:admin@localhost:5432" //O NOME DO DOCKER

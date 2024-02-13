@@ -3,12 +3,12 @@
 
 version: '3.9'
 
-services: 
+services: # quais serviços estamos utilizando
   database:
     image: postgres
-    container_name: tutorial
+    container_name: tutorial # define o nome do container
     restart: always
-    ports: # porta 
+    ports: # porta de conexão do host e do contêiner
       - 5432:5432
     environment: # dados do ambiente
       - POSTGRES_USER=admin
