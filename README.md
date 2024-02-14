@@ -4,6 +4,10 @@ Projeto de lista de tarefas desenvolvido com React, NodeJS e PostgreSQL.
 
 > [Inspirado neste projeto](https://www.youtube.com/watch?v=qbQ8wzJ6DrQ) 
 
+<!-- COMANDOS PARA RODAR:
+npx prisma studio
+npm run dev -->
+
 ### Setup and Documentations
 This project was made with:
 
